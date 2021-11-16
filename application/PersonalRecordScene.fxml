@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CCE6F4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Button layoutX="19.0" layoutY="351.0" mnemonicParsing="false" onAction="#backToPatientMain" text="Back to Main">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="511.0" layoutY="351.0" mnemonicParsing="false" onAction="#logout" text="logout">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="95.0" layoutY="30.0" text="Patient - Appointment Records" textFill="#130bae">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="99.0" layoutY="108.0" mnemonicParsing="false" onAction="#findRecordsPatient" text="Find Records" />
+      <ListView fx:id="listOfRecordsP" layoutX="61.0" layoutY="154.0" prefHeight="158.0" prefWidth="210.0" />
+      <Button layoutX="319.0" layoutY="190.0" mnemonicParsing="false" onAction="#printRecordsP" prefHeight="39.0" prefWidth="151.0" text="Go to Record" textFill="#277c21">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="appointmentLabel" alignment="TOP_LEFT" layoutX="300.0" layoutY="259.0" prefHeight="27.0" prefWidth="289.0" textFill="#dd1010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

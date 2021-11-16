@@ -1,3 +1,4 @@
+package application;
 
 public class User {
 	//instance variables

@@ -1,27 +1,23 @@
+package application;
 
 public class Nurse extends User {
-	//INSTANCE VARIABLE
-
+	
+	//instance variable
 	String doctorList;
 	
-	
-	//Constructor
-
+	//constructor
 	public Nurse(String username, String password, String name, String doctorList) {
 		super(username, password, name);
-		// TODO Auto-generated constructor stub
 		this.doctorList = doctorList;
-		
 	}
-	//getter & setter
 	
-	public String getDocotrList() {
+	//getters/setters
+	public String getDoctorList() {
 		return doctorList;
-		
 	}
+
 	public void setDoctorList(String doctorList) {
-		this.doctorList = doctorList; 
+		this.doctorList = doctorList;
 	}
 	
-
 }

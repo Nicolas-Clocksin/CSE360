@@ -1,3 +1,4 @@
+package application;
 
 public class Appointment {
 	//instance variables
@@ -51,10 +52,10 @@ public class Appointment {
 	public void setNotes(String notes) {
 		this.notes = notes;
 	}
-	public String getPescriptions() {
+	public String getPrescriptions() {
 		return pescriptions;
 	}
-	public void setPescriptions(String pescriptions) {
+	public void setPrescriptions(String pescriptions) {
 		this.pescriptions = pescriptions;
 	}
 	public String getParticipants() {

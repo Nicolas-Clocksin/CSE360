@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CCE6F4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Label layoutX="72.0" layoutY="160.0" text="Pick a Username" textFill="#1000f5">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextfield" layoutX="226.0" layoutY="161.0" promptText="Username" />
+      <Label layoutX="220.0" layoutY="34.0" text="Sign Up Page" textFill="#2235e1">
+         <font>
+            <Font name="Dubai Regular" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="198.0" text="Pick a Password" textFill="#1000f5">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordTextfield" layoutX="226.0" layoutY="199.0" promptText="Password" />
+      <Label fx:id="signUpMessage" alignment="CENTER" layoutX="62.0" layoutY="247.0" prefHeight="30.0" prefWidth="478.0" textAlignment="CENTER" textFill="#dd2f2f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="396.0" layoutY="161.0" mnemonicParsing="false" onAction="#checkAvailableUsername" text="Check available" />
+      <Button layoutX="225.0" layoutY="296.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="42.0" prefWidth="149.0" text="Create Account">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="32.0" layoutY="355.0" mnemonicParsing="false" onAction="#logout" prefHeight="19.0" prefWidth="80.0" text="Cancel" textFill="#c64545">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="availableUsername" alignment="CENTER" layoutX="140.0" layoutY="113.0" prefHeight="30.0" prefWidth="321.0" textAlignment="CENTER" textFill="#dd2f2f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

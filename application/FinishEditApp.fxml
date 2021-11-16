@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="659.0" style="-fx-background-color: CCE6F4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Label layoutX="147.0" layoutY="23.0" text="Patient - Change Appointment" textFill="#2a1697">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="appointmentDate" layoutX="109.0" layoutY="93.0" promptText="Enter a date" />
+      <ChoiceBox fx:id="appointmentTime" layoutX="111.0" layoutY="160.0" prefWidth="150.0" />
+      <Label layoutX="33.0" layoutY="162.0" text="Pick a time" textFill="#1933ab">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="111.0" layoutY="126.0" mnemonicParsing="false" onAction="#displayTimes" text="Get available times" />
+      <Button layoutX="219.0" layoutY="303.0" mnemonicParsing="false" onAction="#pushEditedAppointment" text="Update Appointment">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="createAppLabel" alignment="CENTER" layoutX="82.0" layoutY="243.0" prefHeight="43.0" prefWidth="550.0" textFill="#dd1f1f">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

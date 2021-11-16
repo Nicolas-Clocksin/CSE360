@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CCE6F4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Label layoutX="157.0" layoutY="14.0" text="Patient - See Record" textFill="#1f0ca8">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="27.0" layoutY="351.0" mnemonicParsing="false" onAction="#backToAppointmentRecordsP" text="Back to Find Records">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="506.0" layoutY="351.0" mnemonicParsing="false" onAction="#logout" text="logout">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="29.0" layoutY="101.0" text="Date:" textFill="#130dc9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="vitalsLabel" alignment="TOP_CENTER" layoutX="416.0" layoutY="149.0" prefHeight="17.0" prefWidth="147.0" textAlignment="CENTER" textFill="#eb0e0e" />
+      <Label layoutX="27.0" layoutY="128.0" text="Time: " textFill="#130dc9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="158.0" text="Participants:" textFill="#130dc9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="192.0" text="Vitals:" textFill="#130dc9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="229.0" text="Exams:" textFill="#130dc9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="264.0" text="Notes:" textFill="#130dc9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="298.0" text="Prescriptions:" textFill="#130dc9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="80.0" layoutY="101.0" prefHeight="27.0" prefWidth="112.0" textFill="#171717">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLabel" layoutX="78.0" layoutY="128.0" prefHeight="27.0" prefWidth="106.0" textFill="#171717">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="participantsLabel" layoutX="133.0" layoutY="158.0" prefHeight="27.0" prefWidth="183.0" textFill="#171717">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="vitalzLabel" layoutX="83.0" layoutY="192.0" prefHeight="27.0" prefWidth="406.0" textFill="#171717">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="examsLabel" layoutX="96.0" layoutY="229.0" prefHeight="27.0" prefWidth="494.0" textFill="#171717">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="notesLabel" layoutX="92.0" layoutY="264.0" prefHeight="27.0" prefWidth="487.0" textFill="#171717">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="prescriptionsLabel" layoutX="141.0" layoutY="298.0" prefHeight="27.0" prefWidth="429.0" textFill="#171717">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="417.0" layoutY="89.0" mnemonicParsing="false" onAction="#seeAppointment" text="Display Record" textFill="#da2caf">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

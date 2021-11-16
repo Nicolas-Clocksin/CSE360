@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CCE6F4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Label layoutX="101.0" layoutY="14.0" text="What type of user are you?" textFill="#2235e1">
+         <font>
+            <Font name="Dubai Regular" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="permissionCode" layoutX="433.0" layoutY="181.0" prefHeight="25.0" prefWidth="115.0" promptText="Enter Passcode" />
+      <Button layoutX="211.0" layoutY="110.0" mnemonicParsing="false" onAction="#goToStep2Patient" prefHeight="42.0" prefWidth="149.0" text="Patient">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="signUpMessage" alignment="CENTER" layoutX="29.0" layoutY="220.0" prefHeight="30.0" prefWidth="533.0" text="Did it work?" textAlignment="CENTER" textFill="#dd2f2f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="179.0" text="if you are a Doctor or Nurse please enter Permission code" textFill="#2235e1">
+         <font>
+            <Font name="Dubai Regular" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="211.0" layoutY="264.0" mnemonicParsing="false" onAction="#goToStep2Nurse" prefHeight="42.0" prefWidth="149.0" text="Nurse">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="211.0" layoutY="328.0" mnemonicParsing="false" onAction="#goToStep2Doctor" prefHeight="42.0" prefWidth="149.0" text="Doctor">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
